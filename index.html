@@ -29,14 +29,13 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul> 
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                <span class="navbar-text" id="loginbar">
+                    <span class="fa fa-sign-in"></span> Login
                 </span>
                 </div>
         </div>  
     </nav>
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModal" class="modal fade">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
@@ -83,8 +82,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-warning" role="button" class="btn btn-block btn-warning"> 
-                        <a data-toggle="modal" data-target="#reserveModal" >Reserve Table</a>
+                    <button type="button" class="btn btn-warning" role="button" class="btn btn-block btn-warning" id="reservebutton"> 
+                        Reserve
                     </button>
                 </div>
             </div>
@@ -92,10 +91,10 @@
     </header>
     <div id="reserveModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
+            <div id="resmod" class="modal-content">
                 <div class="modal-header">
                     <h4 style="text-decoration-color: black" id="reserve-mod">Reserve</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button id="reserveclose" type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group row">
@@ -332,7 +331,13 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-
+        $
+        $('#reservebutton').click(function(){
+            $('#reserveModal').modal('toggle')
+        });
+        $('#loginbar').click(function(){
+            $('#loginModal').modal('toggle')
+        });
     </script>
     
 </body>
