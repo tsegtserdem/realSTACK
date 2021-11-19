@@ -4,27 +4,42 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
+<<<<<<< HEAD
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+=======
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+>>>>>>> 17eab15d611117ec431bdd0577d5fb2f16349fc9
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
     "parallelshell": "^3.0.1"
+=======
+    "lite-server": "^2.6.1"
+>>>>>>> 17eab15d611117ec431bdd0577d5fb2f16349fc9
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+<<<<<<< HEAD
+=======
+    "node-sass": "^6.0.1",
+>>>>>>> 17eab15d611117ec431bdd0577d5fb2f16349fc9
     "popper.js": "^1.12.9"
   },
   "repository": {
