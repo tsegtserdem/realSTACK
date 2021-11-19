@@ -17,11 +17,7 @@ $carousel-item-height: 300px;
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-<<<<<<< HEAD
     min-height:200px;
-=======
-    min-height:400px;
->>>>>>> 17eab15d611117ec431bdd0577d5fb2f16349fc9
 }
 
 .footer{
